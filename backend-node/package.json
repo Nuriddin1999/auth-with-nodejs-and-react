@@ -1,0 +1,36 @@
+{
+  "name": "auth-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auth API: Google, Facebook, Telegram and email + password sign-in (Node.js + TypeScript).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.ts",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.ts",
+    "typecheck": "tsc",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 \"test/**/*.test.ts\"",
+    "migrate": "node --disable-warning=ExperimentalWarning scripts/migrate.ts",
+    "telegram-webhook": "node --disable-warning=ExperimentalWarning scripts/telegram-webhook.ts"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "google-auth-library": "^11.3.4",
+    "nodemailer": "^10.6.0",
+    "redis": "^6.3.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/nodemailer": "^8.0.2",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.2",
+    "typescript": "^7.0.2"
+  }
+}

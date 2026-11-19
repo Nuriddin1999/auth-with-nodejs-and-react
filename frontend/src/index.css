@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens -> Tailwind utilities: bg-page, bg-card, text-fg, text-muted, border-line,
+ * text-error, text-success, bg-accent, bg-field, bg-facebook, bg-telegram, animate-draw-check.
+ * Components use only Tailwind classes (shared sets live in src/ui.ts).
+ */
+@theme {
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --color-page: #f4f5f7;
+  --color-card: #ffffff;
+  --color-fg: #1c1f24;
+  --color-muted: #6b7280;
+  --color-line: #e5e7eb;
+  --color-field: #ffffff;
+  --color-error: #c62828;
+  --color-success: #2e7d32;
+  --color-accent: #2563eb;
+  --color-facebook: #1877f2;
+  --color-telegram: #54a9eb;
+
+  --animate-draw-check: draw-check 0.4s 0.1s ease-out forwards;
+  @keyframes draw-check {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+/* Dark theme: same utilities, different values. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page: #111317;
+    --color-card: #1b1e24;
+    --color-fg: #e8eaed;
+    --color-muted: #9aa0a6;
+    --color-line: #2d3139;
+    --color-field: #14161b;
+    --color-error: #ef5350;
+    --color-success: #66bb6a;
+  }
+}

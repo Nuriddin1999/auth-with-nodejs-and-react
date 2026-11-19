@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.log
+
+# Secrets: only .env.example is committed
+.env
+.env.*
+!.env.example
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Personal notes, not part of the solution
+Auth_Project_Guide.pdf

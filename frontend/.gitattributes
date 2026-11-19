@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+# Binary files: never touch line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.gz binary
+*.sqlite3 binary
+
+# Generated lockfiles: no textual diffs in reviews
+package-lock.json -diff linguist-generated

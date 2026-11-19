@@ -1,0 +1,40 @@
+# --- Node.js (frontend, backend-node) ------------------------------------
+**/node_modules/
+**/dist/
+**/coverage/
+**/*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Secrets: only the templates are committed ----------------------------
+**/.env
+**/.env.*
+!**/.env.example
+
+# --- Databases (contain users and password hashes) ------------------------
+**/*.sqlite3
+**/*.sqlite3-journal
+**/*.sqlite3-wal
+**/*.sqlite3-shm
+
+# --- Python (old Django backend in backend/) ------------------------------
+**/venv/
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.ruff_cache/
+
+# --- Logs -----------------------------------------------------------------
+**/*.log
+**/logs/
+
+# --- Editors and OS -------------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

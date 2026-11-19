@@ -1,0 +1,15 @@
+node_modules/
+coverage/
+*.tsbuildinfo
+*.log
+
+# Secrets: only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# Local database (users and password hashes); created on start
+db.sqlite3
+db.sqlite3-journal
+db.sqlite3-wal
+db.sqlite3-shm
